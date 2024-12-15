@@ -22,6 +22,7 @@ const Memo = new mongoose.model('Memo', memoSchema);
 const User = new mongoose.model('User', userSchema);
 const app = express();
 const port = process.env.PORT
+const webAddress = process.env.WEBADDRESS
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -109,7 +110,7 @@ app.post('/sign-in', (req, res) => {
                     res.render('wrong-password');
                 }
                 else {
-                    res.render('user-memos', {username: foundUser.username, name: foundUser.name, memos: foundUser.memos});
+                    res.render('user-memos', {username: foundUser.username, name: foundUser.name, memos: foundUser.memos, webAddress: webAddress});
                 }
             }
         }

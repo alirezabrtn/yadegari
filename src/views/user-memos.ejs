@@ -7,7 +7,7 @@
 <h4 class="memo-link">لینک نوشتن یادگاری برای شما:</h4>
 <div class="copy">
     <button onclick="copyFunction()" id="copyButton">کپی</button>
-    <input type="text" value="<%= 'https://yadegari.alirezabaratian.com/' + username %>" id="theLink" readonly>
+    <input type="text" value="<%= webAddress + '/' + username %>" id="theLink" readonly>
 </div>
 
 <% if (memos.length === 0) { %>
