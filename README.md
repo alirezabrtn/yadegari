@@ -2,7 +2,7 @@
 Simple full-stack Node.js app for writing memos
 
 ## Note
-This project was intended to be an example for my Node.JS learning journey and will not haVe further updates.
+This project was intended to be an example for my Node.JS learning journey and will not have further updates.
 
 ## Run
 - You should have MongoDB installed and running on your host.
