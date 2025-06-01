@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<div class="content">
+    <h1 class="hi">👋🏻 سلام، <span><%= name %></span></h1>
+<a href="/" class="sign-out">🚪 خروج</a>
+
+<h4 class="memo-link">لینک نوشتن یادگاری برای شما:</h4>
+<div class="copy">
+    <button onclick="copyFunction()" id="copyButton">کپی</button>
+    <input type="text" value="<%= webAddress + '/' + username %>" id="theLink" readonly>
+</div>
+
+<% if (memos.length === 0) { %>
+    <h6>هنوز برای شما یادگاری نوشته نشده!</h6>
+<% } else { %>
+    <h1 style="margin-bottom: 25px;">یادگاری‌ها</h1>
+<% } %>
+
+<% memos.forEach((memo) => { %>
+    <div class="memo">
+    <% if (memo.author === "ناشناس") { %>
+        <h6 class="memo-item"><span><%= memo.author %></span></h6>
+    <% } else { %>
+        <h6 class="memo-item">از طرف: <span><%= memo.author %></span></h6>
+    <% } %>
+        <h6 class="memo-item" id="content">متن: <br> <span><%= memo.message %></span></h6>
+        <h6 class="memo-item">تاریخ: <span><%= memo.date %></span></h6>
+    </div>
+<% }) %>
+
+<script>
+    function copyFunction() {
+    var theText = document.getElementById("theLink");
+    theText.select();
+    theText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    document.querySelector(".memo-link").innerHTML = "لینک شما کپی شد!";
+}
+</script>
+</div>
+
+<footer class="memo-footer">کاری از علیرضا براتیان <br> اسفند ۱۳۹۹</footer>
+

@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="content">
+    <h1>فرم ثبت نام</h1>
+
+<main>
+    <div class="form-area">
+        <form action="/sign-up" method="POST">
+            <label for="name">نام زیبای شما</label>
+            <br>
+            <input type="text" name="name" placeholder="" autocomplete="off" required>
+            <br>
+            <label for="username">نام کاربری</label>
+            <br>
+            <input type="text" name="username" placeholder="" autocomplete="off" required>
+            <br>
+            <label for="name">رمز</label>
+            <br>
+            <input type="password" name="password" placeholder="" autocomplete="off" class="password" required>
+            <br>
+            <button type="submit" class="form-button">برو بریم</button>
+        </form>
+    </div>
+    <p class="hint">حساب کاربری داری؟</p>
+    <button class="form-button"><a href="/sign-in">وارد شو</a></button>
+</main>
+</div>
+
+<div class="footer-container">
+    <footer class="footer">کاری از علیرضا براتیان <br> اسفند ۱۳۹۹</footer>
+</div>
