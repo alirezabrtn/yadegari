@@ -1,5 +1,5 @@
 # Yadegari
-A simple full-stack Node.js app for writing memos
+A simple full-stack Node.js app for writing memos.
 
 ## Run
 
