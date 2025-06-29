@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="content">
+    <h1 class="ejs-heading">یادگاری برای <span><%= name %></span></h1>
+
+<div class="form-area" id="memo-text" style="height: 150vh;">
+    <form action="/new-memo" method="POST" id="memo-form">
+        
+        <label for="author">از طرف</label>
+        <br>
+        <input type="text" name="author" id="author" autocomplete="off">
+        <br>
+        <label for="memo">متن یادگاری</label>
+        <br>
+        <textarea name="memo" id="" cols="30" rows="20" autocomplete="off" required></textarea>
+        <br>
+        <input type="text" name="username" value="<%= username %>" style="display: none;" >
+        <button type="submit" class="form-button">ارسال</button>
+    </form>
+
+    <p class="hint">حساب کاربری ندارید؟</p>
+    <button class="form-button"><a href="/sign-up">ثبت نام کنید</a></button>
+
+</div>
+</div>
+
+<footer class="memo-footer">کاری از علیرضا براتیان <br> اسفند ۱۳۹۹</footer>
+
+</body>
+</html>

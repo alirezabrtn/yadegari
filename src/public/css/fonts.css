@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-Thin.woff2);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/peydaWeb-extralight.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/peydaWeb-light.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-SemiBold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-ExtraBold.woff2);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url(./fonts/PeydaWeb-Black.woff2);
+    font-weight: 900;
+}
