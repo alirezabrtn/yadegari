@@ -20,4 +20,4 @@ sudo docker run -d --network=host -e PORT=3000 -e WEB_ADDRESS="http://localhost:
 
 ```
 
-#### This project is not maintained untill further notice.
+#### This project is being maintained again
